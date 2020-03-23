@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class ArrayGreater5
+{	public static void main(String[] args)
+	{	Scanner sc = new Scanner(System.in);//taking input from the user by using scanner class
+		System.out.println("Enter number of elements you want to enter:");
+		int n = sc.nextInt();
+		int i;
+		int [] a = new int[n];
+		System.out.println("Enter array elements:"+"\t");
+		//taking given elements in array and printing elements
+		  for( i=0;i<n;i++) 
+		  { 
+			  a[i]=sc.nextInt();
+			  System.out.println(a[i] + " "); 
+		  }
+	//loop to print greater than 5
+		  System.out.println("elements that are greater than 5 are:\t");
+		  for(i=0;i<n;i++) 
+		  {
+			  if(a[i]>5)
+			{
+			System.out.print(a[i] +" ");
+			}
+	
+		  }
+	}
+}
